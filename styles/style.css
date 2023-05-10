@@ -229,6 +229,8 @@
 
 .staff {
   padding: 100px 0 140px;
+  background-image: url(../images/staff_picks_background.jpg);
+  background-position: center;
 }
 
 .staff__title {
@@ -249,12 +251,13 @@
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .staff__card {
   max-width: 760px;
-  margin-top: 68px;
+  margin: 68px auto auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 40px;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .card {
