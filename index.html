@@ -22,21 +22,19 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#jump-to-staff">Staff picks</a>
+              <a class="nav__link" href="#staff">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link" href="#jump-to-events">Events</a>
+              <a class="nav__link" href="#events">Events</a>
             </li>
             <li>
-              <a class="nav__link" href="#jump-to-membership"
-                >Become a member</a
-              >
+              <a class="nav__link" href="#membership">Become a member</a>
             </li>
             <li>
-              <a class="nav__link" href="#jump-to-about">About</a>
+              <a class="nav__link" href="#about">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" href="#about">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -52,9 +50,7 @@
           class="header__image"
         />
         <div class="header__footer">
-          <a class="header__link" href="#jump-to-about"
-            >About the library &darr;</a
-          >
+          <a class="header__link" href="#about">About the library &darr;</a>
           <p class="header__address">
             200 Success Avenue, The Town of Practicum
           </p>
@@ -62,7 +58,7 @@
       </header>
 
       <main class="content">
-        <section class="events" id="jump-to-events">
+        <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -142,7 +138,7 @@
           </div>
         </section>
 
-        <section class="staff" id="jump-to-staff">
+        <section class="staff" id="staff">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <ul class="staff__cards">
@@ -216,7 +212,7 @@
           </ul>
         </section>
 
-        <section class="membership" id="jump-to-membership">
+        <section class="membership" id="membership">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -272,7 +268,7 @@
           </ul>
         </section>
 
-        <section class="about" id="jump-to-about">
+        <section class="about" id="about">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -296,7 +292,7 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="about">
         <div class="footer__columns">
           <div class="footer__column">
             <img
@@ -318,10 +314,7 @@
             <h4 class="footer__column-heading">Social Media</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a
-                  href="https://www.facebook.com/PracticumUSA/"
-                  class="footer__column-link"
-                >
+                <a href="#" class="footer__column-link">
                   <img
                     src="./images/facebook_white.svg"
                     alt="facebook logo"
@@ -330,10 +323,7 @@
                 </a>
               </li>
               <li class="footer__list-item">
-                <a
-                  href="https://www.instagram.com/practicum.usa/?hl=en"
-                  class="footer__column-link"
-                >
+                <a href="#" class="footer__column-link">
                   <img
                     src="./images/instagram_white.svg"
                     alt="instagram logo"
