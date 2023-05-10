@@ -22,16 +22,18 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a class="nav__link" href="#jump-to-staff">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link">Events</a>
+              <a class="nav__link" href="#jump-to-events">Events</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a class="nav__link" href="#jump-to-membership"
+                >Become a member</a
+              >
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a class="nav__link" href="#jump-to-about">About</a>
             </li>
             <li>
               <a class="nav__link">Contacts</a>
@@ -50,7 +52,9 @@
           class="header__image"
         />
         <div class="header__footer">
-          <a class="header__link">About the library &darr;</a>
+          <a class="header__link" href="#jump-to-about"
+            >About the library &darr;</a
+          >
           <p class="header__address">
             200 Success Avenue, The Town of Practicum
           </p>
@@ -58,7 +62,7 @@
       </header>
 
       <main class="content">
-        <section class="events">
+        <section class="events" id="jump-to-events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -138,10 +142,10 @@
           </div>
         </section>
 
-        <section class="staff">
+        <section class="staff" id="jump-to-staff">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
-          <ul>
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -212,7 +216,7 @@
           </ul>
         </section>
 
-        <section class="membership">
+        <section class="membership" id="jump-to-membership">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -268,7 +272,7 @@
           </ul>
         </section>
 
-        <section class="about">
+        <section class="about" id="jump-to-about">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -292,7 +296,48 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img
+              src="./images/logo_white.png"
+              alt="practicum footer icon"
+              class="footer__logo"
+            />
+          </div>
+
+          <div class="footer__column footer__column_content_hours">
+            <h4 class="footer__column-heading">Hours</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+              <li class="footer__list-item">Weekends: 10am - 6pm</li>
+            </ul>
+          </div>
+
+          <div class="footer__column footer__column_content_social">
+            <h4 class="footer__column-heading">Social Media</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#">
+                  <img
+                    src="./images/facebook_white.svg"
+                    alt="facebook logo"
+                  />Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">
+                  <img
+                    src="./images/instagram_white.svg"
+                    alt="instagram logo"
+                  />Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2023 Anthony Pham</p>
+      </footer>
     </div>
   </body>
 </html>

@@ -41,6 +41,10 @@
   font-weight: bold;
 }
 
+.nav__link:hover {
+  color: #1f69c9;
+}
+
 .header__title {
   max-width: 544px;
   font-size: 66px;
@@ -79,6 +83,10 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+  color: #1f69c9;
 }
 
 .header__address {
@@ -153,6 +161,10 @@
 .events__more {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.events__more:hover {
+  color: #1f69c9;
 }
 
 .events__cover {
@@ -230,7 +242,7 @@
 .staff {
   padding: 100px 0 140px;
   background-image: url(../images/staff_picks_background.jpg);
-  background-position: center;
+  background-size: cover;
 }
 
 .staff__title {
@@ -238,6 +250,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
+  color: #ffffff;
 }
 
 .staff__subtitle {
@@ -246,10 +259,11 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
+  color: #ffffff;
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
-.staff__card {
+.staff__cards {
   max-width: 760px;
   margin: 68px auto auto;
   display: flex;
@@ -315,11 +329,13 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .step {
-  /* Add styles */
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -346,6 +362,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
 }
 
 .about__title {
@@ -354,6 +371,7 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
 }
 
 .about__content {
@@ -361,6 +379,14 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  flex-wrap: wrap;
+  margin-left: 120px;
+  gap: 32px;
+  z-index: 1;
+}
+
+.about__paragraph {
+  margin-top: 0;
 }
 
 .about__circle {
@@ -368,22 +394,41 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  z-index: 0;
+  position: absolute;
+  top: -121px;
+  left: -91px;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 80px 102px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__columns {
+  display: flex;
+  justify-content: space-between;
+  min-height: 224px;
 }
 
 .footer__column_content_hours {
+  margin-left: auto;
+  margin-right: 100px;
 }
 
 .footer__column_content_social {
+  margin-left: 100px;
+  margin-right: 102px;
 }
 
 .footer__logo {
+  width: 116px;
+  height: 21px;
+  margin-left: 80px;
 }
 
 .footer__list {
@@ -394,9 +439,12 @@
 }
 
 .footer__list-item {
+  margin-bottom: 16px;
 }
 
 .footer__column-heading {
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .footer__column-link {
@@ -407,7 +455,11 @@
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .footer__copyright {
+  margin-top: 108px;
+  margin-left: 80px;
 }
